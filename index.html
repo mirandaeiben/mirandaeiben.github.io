@@ -2,58 +2,53 @@
 
 <HEAD>
   <TITLE>Miranda Eiben</TITLE>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </HEAD>
 
 <body>
   <h1>Dr. Miranda Eiben, PhD</h1>
   <h2>Intro</h2>
 
-  <p>Hi! My name is Miranda Eiben, and I am a postdoctoral researcher at the University of Iceland.</p>
+  <p>Hi! My name is Miranda Eiben and I am a postdoctoral researcher at the University of Iceland.</p>
 
-  <p>I work on polymer optical materials for millimeter experiments. I currently haunt the <a href="https://cmbeam.com/">CMBeam group</a>. I was previously in the <a href="https://sites.harvard.edu/cmb-lab/group/">Harvard CMB Lab</a> working on the BICEP/<i>Keck</i> CMB experiments and the UMass Cryogenics lab working on the TolTEC instrument.</p>
+  <p>I work on polymer optical materials for millimeter experiments. I currently haunt the <a href="https://cmbeam.com/">CMBeam group</a>. I was previously in the <a href="https://sites.harvard.edu/cmb-lab/group/">Harvard CMB Lab</a> working on the <a href="http://bicepkeck.org/">BICEP/<i>Keck</i> CMB experiments</a> and the <a href="https://people.umass.edu/~gwilson/index.html">UMass Amherst Cryogenics Devices lab</a> working on the <a href="http://toltec.astro.umass.edu/">TolTEC instrument</a>.</p>
 
-  <h2>Academic Interests</h2>
-  <h3>Instrumentation</h3>
-  <p>Millimeter electromagnetic waves are incredibly useful for a wide range astrophysical topics, from our stellar backyard out to the oldest light in the universe. But they exist in a very unique regime, not quite infrared and not quite radio<a href="#occupation_number">*</a>. This weird parameter space allows for some very interesting telescopes, from <a href="https://arxiv.org/pdf/2110.00482.pdf">quasi-optical systems</a> reminiscent of the <a href="https://en.wikipedia.org/wiki/Refracting_telescope">first refractors</a> to some of the <a href="https://eventhorizontelescope.org/">craziest high tech systems</a> ever made.</p>
+  <figure>
+    <img src="./IMG_9107.jpg" width="500">
+    <figcaption>My face! At Acadia National Park in Maine.</figcaption>
+  </figure>
 
-  <p>Additionally, some of the most interesting frequency bands are protected by the FCC for use in radio astronomy. Though arguably these frequencies are protected because they are not very commercially useful due to atmospheric absorption lines. For instance, the afterglow of the Big Bang (the Cosmic Microwave Background or CMB) peaks around 150 GHz, conveniently between an oxygen and a water absorption line. Since these bands are not really used for communications<a href="#communication_freq">**</a>, nearly every material property (optical or mechanical) must be determined by the instrumentalist</p>
+  <section>
+  <h2>Other Pages</h2>
+  <a href="./academic_interests.html"><h3>Academic Interests</h3></a>
+  <a href="./presentations.html"><h3>Presentations</h3></a>
+  <a href="./nonacademic_interests.html"><h3>Non-academic Interests</h3></a>
 
-  <p>However! Actually observing millimeter light is more difficult than you may have assumed, because <i>basically everything with a temperature emits millimeter light</i>. You're doing it right now! And so is the device you're reading this on, as well as the floor under your feet and the sky outside your window. All of those sources are also emitting way more millimeter light than most astrophysical sources, because they are significantly hotter than the astrophysical sources.</p>
 
-  <p>Therefore, we millimeter instrumentalists are also cryogenic experts, to help with the fact that everything with a temperature emits the light that we'd really like to only see from the universe. By reducing the temperature of as much of our telescopes as we can, we significantly cut down on the photon noise from sources that we don't want.</p>
+  <figure>
+    <img src="./window_ad.jpg">
+  </figure>
+  <p>Interested in extremely thin polyethylene vacuum windows? Here is a <a>brief technical document</a> or <a>the window paper</a>.</p>
 
-  <p>Making telescopes cryogenic raises some other issues, mainly that heat transfer exists! Here's how we deal with each form of heat transfer:</p>
+  <figure>
+    <img src="./eptfe_ad.jpg">
+  </figure>
+  <p>Interested in ePTFE anti-reflection coatings? Here is a <a>brief technical document</a> or <a>the SPIE proceedings</a>.</p>
 
-  <ul>
-    <li>Conduction: design good conductors out to heat pumps and poor conductors for mechanical supports.</li>
-    <li>Convection: pull a vacuum inside the telescope (or just go to outer space).</li>
-    <li>Radiation: we don't want to completely eliminate radiation, we want to observe some! Therefore nested shells are used to interrupt and reduce the temperature of radiation not coming from the line of sight. Then we have filters to reduce the out of band radiation along the line of sight.</li>
-  </ul>
-
-  <p>Did you catch the issue? If we want to let some radiation through <i>and</i> eliminate convection, we need to have a vacuum window! </p>
-
-  <p>Millimeter wavelength vacuum windows have a rich history (which I won't expound here) and I hope that my PhD thesis, Windows to the Universe, made significant contributions to furthering the field. <a href="https://arxiv.org/pdf/2411.10428"></a>Large aperture thin windows made of composite polyethylene laminates can significantly reduce the instrumental optical load on millimeter detectors, and have the potential to be used for a variety of frequencies.</p>
-
-  <p>It is common for other millimeter transmissive optical components to be made of polymers, such as high density polyethylene, polytetrafluoroethylene (PTFE, commercial name Teflon), and nylon: these components need anti-reflection coatings to reduce reflective losses at each interface and, critically, minimize internal reflections. I have worked on designing new <a href="https://arxiv.org/pdf/2407.17604">multi-layered millimeter anti-reflection technology</a>, particularly in compressing expanded PTFE coatings.</p>
-
-  <p>I am also interested in the design and use of these polymers, which I think is understudied in our field: we rely on our understanding these optical materials when designing our optics, we have shockingly little understanding of the millimeter optical properties of these materials. Questions about polymers that consume me currently include: </p>
-
-  <ul>
-    <li>How thick do nylon filters need to be to appropriately filter IR? </li>
-    <li>At what frequency does nylon absorption start to pick up?</li>
-    <li>How does nylon absorption change from room temperature as it cools?</li>
-    <li>How does annealing polymers impact their millimeter optical properties, if it does?</li>
-    <li>What is causing the high forebaffle loading observed in some CMB experiments?</li>
-    <li>Does extruded HDPE exhibit thermal birefringence in the millimeter? Do other extruded materials?</li>
-    <li>What is the UV resistance of HMPE windows?</li>
-    <li>What is the failure force of HMPE windows? (we have determined an operational safety factor of 8.2 at South Pole, to be clear, but have never taken a full scale window to failure)</li>
-  </ul>
-
-  <p id="occupation_number">*Very literally! The <a href="https://en.wikipedia.org/wiki/Photon_statistics">photon occupation number</a> is very close to 1 in the millimeter, so the statistics of the light is literally both Poisson (shot, particle-like) <i>and</i> Bose (wave-like) in the millimeter.</p>
-
-  <p id="communication_freq">**The highest frequency typical Wi-Fi band is 6.4 GHz (though there are protocols that go as high as 74.52 GHz) and Bluetooth are 2.4 to 2.485 GHz.</p>
-
-  <h3>Science!</h3>
-
+  <p>Interested in my thesis that goes into way more detail on both? Here is the <a>official copy</a>, or you can email me at miranda@hi.is for an unofficial copy.</p>
+  </section>
+  
+  <section>
   <h2>Selected List of Publications</h2>
+  <p>My ORCID ID: <a href="https://orcid.org/0009-0007-6718-1730">0009-0007-6718-1730</a></p>
+
+  <ul>
+    <li>BICEP/Keck Collaboration... <u>Eiben, Miranda</u>, et al. (2024). <a>BICEP/Keck XIX: Extremely Thin Composite Polymer Vacuum Windows for BICEP and Other High Throughput Millimeter Wave Telescopes.</a> Manuscript submitted for publication in The Astrophysical Journal.</li>
+    <li><u>Eiben, Miranda</u>, et al. (2024). <a>Multi-layer anti-reflection coats using ePTFE membrane for mm-wavelength plastic optics.</a>  In Proceedings Volume 13102, Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XII. 2024, Yokohama, Japan. DOI: 10.1117/12.3019151</li>
+    <li><u>Eiben, Miranda</u>, et al. (2022). <a>Laminate polyethylene window development for large aperture millimeter receivers.</a> In Proceedings Volume 12190, Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XI. 2022, Montréal, Québec, Canada. DOI: 10.1117/12.2629591</li>
+    <li>Dierickx, Marion... <u>Eiben, Miranda</u>, et al. (2021). <a>Plastic Laminate Antireflective Coatings for Millimeter-wave Optics in BICEP Array</a>. Journal of Low Temperature Physics. Volume 211, pages 366–374 DOI: 10.1007/s10909-023-02967-1</li>
+    <li>Wilson, Grant... Eiben, Miranda, et al. (2020). <a>The TolTEC camera: an overview of the instrument and in-lab testing results</a>. In Proceedings Volume 11453, Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy X. 2020, Online Only. DOI: 10.1117/12.3019151</li>
+  </ul>
+
+  </section>
 </body>
